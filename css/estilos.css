@@ -830,7 +830,7 @@ iframe{
 
 }
 /* Responsive móvil */
-@media only screen and (max-width:320px){
+@media only screen and (max-width:425px){
     /* común a todas las páginas*/
     body{
         display: grid;
