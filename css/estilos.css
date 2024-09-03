@@ -607,7 +607,7 @@ iframe{
     body{
         display: grid;
         width: 100%;
-        grid-template-rows:70px 450px 1fr 100px ;
+        grid-template-rows:70px 450px 1fr 150px ;
         grid-template-columns:100%;
         min-height: 100vh;
         grid-template-areas: 
@@ -834,7 +834,7 @@ iframe{
     body{
         display: grid;
         width: 100%;
-        grid-template-rows:70px 450px 1fr 130px ;
+        grid-template-rows:70px 450px 1fr 150px ;
         grid-template-columns:100%;
         min-height: 100vh;
         grid-template-areas: 
