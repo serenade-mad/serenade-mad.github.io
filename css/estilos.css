@@ -125,7 +125,6 @@ nav ul li a:hover{
 nav ul:hover{
     width: 740px;
     height: 100px;
-
 }
 nav ul:hover> li .logo{
     width: 86px;
@@ -500,7 +499,6 @@ input[type="radio"]:checked{
 }
 input[type="checkbox"]{
     border: 1px solid violet;
-
 }
 .sex fieldset{
     font-size: 12px;
@@ -583,6 +581,10 @@ iframe{
     object-fit: cover;
     padding-right: 10px;
     box-shadow: 1px 1px 18px var(--color-principal);
+}
+.instalaciones figcaption{
+    margin-top: 2px;
+    margin-bottom: 20px;
 }
 /* páginas documentos legales footer */
 .aviso-legal{
