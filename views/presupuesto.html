@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <meta name="description" content="Serenade trata a cada persona de forma única, porque así es cada uno, único. Dinos qué necesitas y te proponemos un tratamiento adaptado.">
+<link rel="stylesheet" href="./../css/estilos.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="icono-line"><a href="tel:+34637872503"><img src="./../assets/images/phone.svg" alt="telefono"  class="iconos"><span class="data">637 87 25 03</span></a> </li>
+             <li class="icono-line"><a href="mailto:info@serenade.net" target="_blank"><img src="./../assets/images/envelope.svg" alt="email" class="iconos"><span class="data">info@serenade.net</span></a></li>
+            <li class="icono-line"><img src="./../assets/images/clock.svg" alt="horario" class="iconos"><span class="data horario" >Lunes-Jueves 9:00-20:00</span> </li>
+            <li class="icono-line"><img src="./../assets/images/map-location-dot.svg" alt="direccion" class="iconos"><span class="data" >C/ Olmo 13. 28012. Madrid </span></li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./../index.html"><img src="./../assets/images/serenade-logo.png" alt="Serenade logo" class="logo" width="292" height="333"></a></li>                     
+            <li class="inicio"><a href="./../index.html" target="_blank">INICIO</a></li>
+            <li class="prod"><a href="./productos.html" target="_blank">PRODUCTOS</a></li>
+            <li class="presup"><a href="./presupuesto.html" target="_blank">PRESUPUESTO</a></li>
+            <li class="contact"><a href="./contacto.html" target="_blank">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <main>
+       
+        <div class="formul">
+                 <h1>FORMULARIO DE PRESUPUESTO</h1>
+                <form action="#.php" method="post">
+            <div class="formulario">
+                <section class="h2-form">
+                    <h2>Rellena los datos para solicitar info sobre un tratamiento o servicio. Si no sabes muy bien qué terapia se adapta mejor a ti, descríbenos tu problema y nos pondremos en contacto contigo para ofrecerte las mejores soluciones</h2>
+                </section>
+                <section class="datos-personales">
+                        <h3>Datos personales</h3>
+                        <article>
+                            <div><h4><label for="name-form">Nombre</label></h4></div><div><input type="text" id="name-form" required></div>
+                        </article>
+                        <article>
+                            <div><h4><label for="surname-form">Apellidos</label></h4></div><div><input type="text" id="surname-form"></div>
+                        </article>
+                        <article>
+                            <div><h4><label for="email-form">Email</label></h4></div><div><input type="email" id="email-form"></div>
+                        </article>
+                        <article>
+                            <div><h4><label for="tel-form">Teléfono</label></h4></div><div><input type="tel" id="tel-form" required></div>
+                        </article>
+                        <article>
+                        <h4><label for="edad">Edad: </label></h4> <select name="edad" id="edad">
+                            <option value="menos20">Menos de 20 años</option>
+                            <option value="menos25">20-25 años</option>
+                            <option value="menos35">25-35 años</option>
+                            <option value="menos45">35-45 años</option>
+                            <option value="menos55">45-55 años</option>
+                            <option value="menos65">55-65 años</option>
+                            <option value="menos75">65-75 años</option>
+                            <option value="mas75">+75 años</option>
+                            <option value="noresponder">prefiero no responder</option>
+                        </select>
+                        </article>
+                        <article class="sex">
+                        <fieldset>
+                        <h4>Sexo: </h4>
+                            <div><input type="radio" name="sex" value="mujer" id="mujer"><label for="mujer">Mujer</label></div>
+                            <div><input type="radio" name="sex" value="hombre" id="hombre"><label for="hombre">Hombre</label></div>
+                            <div><input type="radio" name="sex" value="otro" id="otro"><label for="otro">Otro</label></div>
+                        </fieldset>   
+                        </article>
+                </section>
+                <section class="datos-pedido">       
+                    <h3>Datos sobre tu pedido</h3>
+                    <div class="ped">
+                        <div class="ped1">
+                            <article>
+                            <h4><label for="servicios"> Selecciona servicio:</label> </h4>
+                                <select name="servicios" id="servicios">
+                                    <option value="psic"> Psicoterapia</option>
+                                    <option value="fisio">Fisioterapia</option>
+                                    <option value="yoga">Yoga</option>
+                                    <option value="reiki">Reiki</option>
+                                    <option value="masaje">Masajes</option>
+                                    <option value="reflex">Reflexiología</option>
+                                    <option value="acupunt">Acupuntura</option>
+                                    <option value="auricul">Auriculoterapia</option>
+                                    <option value="kine">Kinesiología</option>
+                                    <option value="meditac">Meditación</option>
+                                    <option value="danzat">Danzaterapia</option>
+                                </select>
+                            </article>
+                            <article class="sesion">
+                                <fieldset>
+                                 <h4>Tipo de sesión:</h4>
+                                    <div><input type="radio" name="tipo-sesion" value="clinica" id="clinica"> <label for="clinica">En la clínica </label></div>
+                                    <div><input type="radio" name="tipo-sesion" value="domicilio" id="domicilio"><label for="domicilio">En domicilio </label></div>
+                                    <div><input type="radio" name="tipo-sesion" value="online" id="online"><label for="online">Online </label></div>
+                                    <div><p class="nota">**NOTA: La modalidad online sólo está disponible para los servicios de psicoterapia, meditación y yoga</p></div>
+                                </fieldset>
+                            </article>
+                        </div>
+                        <div class="ped2">
+                        <article>
+                        <h4>Solicita más información</h4>
+                            <textarea cols="40" rows="20" placeholder="Danos todos los detalles posibles de tu problema o de lo que necesites o si lo prefieres dinos a qué hora te podemos llamar"></textarea>
+                        </article>
+                    </div>
+                </div>
+                </section>
+                <section class="validar-form">
+                    <h3> Ya casi esta...</h3>
+                    <div><label for="privacidad">Acepto la politica de privacidad de la empresa</label><input type="checkbox" id="privacidad" required> </div>
+                    <div><input type="submit"></div>
+                </section>
+            </div>
+        </form>
+        </div>
+        </main>
+    <footer>
+        <ul>
+            <li><a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1" target="_blank"><img src="./../assets/images/logo-instagram.png" alt="Serenade instagram" width="300" height="300"></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="./../assets/images/logo-facebook.jpg" alt="Serenade Facebook" width="2688" height="2688"></a> </li>
+            <li><a href="https://x.com/" target="_blank"><img src="./../assets/images/logo-twitter-x.png" alt="serenade twitter" width="225" height="225"></a> </li>
+        </ul>
+        <ul class="legal">
+            <li class="copyr"> &copy; Copyright 2023 Todos los derechos reservados</li>
+            <li><a href="./aviso-legal.html" target="_blank">Aviso legal</a></li>
+            <li><a href="./politica-privacidad.html" target="_blank">Política de privacidad</a></li>
+            <li> <a href="./views/política-cookies.html" target="_blank">Política de cookies</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
