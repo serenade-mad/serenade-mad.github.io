@@ -542,6 +542,7 @@ input[type="checkbox"]{
 }
 .info-con p{
     display: inline-block; 
+    margin-bottom: 15px;
 }
 iframe{
     appearance: none;
