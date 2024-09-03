@@ -736,7 +736,6 @@ iframe{
         padding: 10px 30px 3px 30px;
         text-indent: -25px;
     }
-
     /*página presupuesto  */
     .formulario{
         display: grid;
@@ -799,10 +798,9 @@ iframe{
         margin-top: 25px;
     }
     iframe{
-            width: 600px;
+            width: 400px;
             height: 225px; 
-            align-self: center;
-           
+            align-self: center;      
     }
     .iFrame{
         align-self: center;
