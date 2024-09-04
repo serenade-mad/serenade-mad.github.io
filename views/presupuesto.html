@@ -19,10 +19,10 @@
     <nav>
         <ul>
             <li><a href="./../index.html"><img src="./../assets/images/serenade-logo.png" alt="Serenade logo" class="logo" width="292" height="333"></a></li>                     
-            <li class="inicio"><a href="./../index.html" target="_blank">INICIO</a></li>
-            <li class="prod"><a href="./productos.html" target="_blank">PRODUCTOS</a></li>
-            <li class="presup"><a href="./presupuesto.html" target="_blank">PRESUPUESTO</a></li>
-            <li class="contact"><a href="./contacto.html" target="_blank">CONTACTO</a></li>
+            <li><a href="./../index.html" target="_blank">INICIO</a></li>
+            <li><a href="./productos.html" target="_blank">PRODUCTOS</a></li>
+            <li><a href="./presupuesto.html" target="_blank"><span class="on"> PRESUPUESTO</span></a></li>
+            <li><a href="./contacto.html" target="_blank">CONTACTO</a></li>
         </ul>
     </nav>
     <main>
@@ -37,16 +37,22 @@
                 <section class="datos-personales">
                         <h3>Datos personales</h3>
                         <article>
-                            <div><h4><label for="name-form">Nombre</label></h4></div><div><input type="text" id="name-form" required></div>
+                            <div><h4><label for="name-form">Nombre</label></h4></div>
+                            <div><input type="text" id="name-form" name="name-form" required pattern="[A-Za]+{3,30}"></div>
                         </article>
                         <article>
-                            <div><h4><label for="surname-form">Apellidos</label></h4></div><div><input type="text" id="surname-form"></div>
+                            <div><h4><label for="surname-form">Apellidos</label></h4></div>
+                            <div><input type="text" id="surname-form" required pattern="[A-Za-z]{3,12}"></div>
                         </article>
                         <article>
-                            <div><h4><label for="email-form">Email</label></h4></div><div><input type="email" id="email-form"></div>
+                            <div><h4><label for="email-form">Email</label></h4></div>
+                            <div><input type="email" id="email-form" name="email" required 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </div>
                         </article>
                         <article>
-                            <div><h4><label for="tel-form">Teléfono</label></h4></div><div><input type="tel" id="tel-form" required></div>
+                            <div><h4><label for="tel-form">Teléfono</label></h4></div>
+                            <div><input type="tel" id="tel-form" name="tel-form" required pattern="[0-9]{9}" title="Introduzca todos los dígitos de su teléfono"></div>
                         </article>
                         <article>
                         <h4><label for="edad">Edad: </label></h4> <select name="edad" id="edad">
